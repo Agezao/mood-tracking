@@ -9,7 +9,7 @@ Mood Tracking using <a href="https://aws.amazon.com/rekognition/" target="_blank
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/Agezao/mood-tracking)
 
 ## How it works?
-
+<img src="https://github.com/Agezao/mood-tracking/blob/master/drawings/mood-tracker.jpg?raw=true" width="600" />
 
 
 ## Getting started
@@ -24,6 +24,9 @@ Mood Tracking using <a href="https://aws.amazon.com/rekognition/" target="_blank
   * edit config with your informations and rename it to `index.js` (instead of `index.example.js`)
   * `npm start`
 
+### Querying data
+
+To later query the data, you can use the [CLI of sqlite](https://www.sqlite.org/cli.html) to search inside the .sqlite3 file.
 
 ## License
 
