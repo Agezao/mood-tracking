@@ -1,0 +1,7 @@
+node_modules/
+photos/*
+db/*
+!photos/.gitkeep
+!db/.gitkeep
+config/index.js
+test_picture.png
