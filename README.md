@@ -28,6 +28,10 @@ Mood Tracking using <a href="https://aws.amazon.com/rekognition/" target="_blank
 
 To later query the data, you can use the [CLI of sqlite](https://www.sqlite.org/cli.html) to search inside the .sqlite3 file.
 
+or
+
+run `npm run export` and it'll generate one .csv with all your sql data in a structured manner.
+
 ## License
 
 Do whatever you want. [open-source MIT license](http://opensource.org/licenses/mit-license.php).
