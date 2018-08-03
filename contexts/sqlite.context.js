@@ -12,8 +12,25 @@ const setup = async () => {
   return await db.run("CREATE TABLE IF NOT EXISTS Tracking (Id INTEGER PRIMARY KEY AUTOINCREMENT, Date INT, Json TEXT)");
 };
 
+const isReady = () => {
+  return db.open;
+}
+
 const runQuery = async (query) => {
   return await db.run(query);
 };
 
-module.exports = { constructor, setup, runQuery };
+const get = (query) => {
+  return new Promise((resolve, reject) => {
+    try{
+      return db.all(query, (err, data) => {
+        resolve(data);
+      });
+    } 
+    catch(ex) {
+      reject(ex);
+    }
+  });
+};
+
+module.exports = { constructor, setup, isReady, runQuery, get };
