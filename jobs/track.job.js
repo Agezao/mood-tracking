@@ -1,8 +1,8 @@
 const config = require('../config');
-const CameraBusiness = require('./business/camera.business'); // CameraBusiness for webcam (should have same interface)
+const CameraBusiness = require('../business/camera.business'); // CameraBusiness for webcam (should have same interface)
 //const CameraBusiness = require('./business/raspistill.business'); // RaspistillBusiness for raspiberry cam (should have same interface)
-const RekognitionBusiness = require('./business/rekognition.business');
-const moodService = require('./services/mood.service');
+const RekognitionBusiness = require('../business/rekognition.business');
+const moodService = require('../services/mood.service');
 //
 const captureBusiness = new CameraBusiness();
 const rekognitionBusiness = new RekognitionBusiness();
